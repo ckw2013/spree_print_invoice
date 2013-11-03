@@ -11,7 +11,7 @@ end
 ordertotals << [Prawn::Table::Cell.new( :text => Spree.t(:order_total), :font_style => :bold), number_to_currency(@order.total)]
 
 bounding_box [bounds.right - 500, bounds.bottom + (subtotal.length * 18)], :width => 500 do
-  table totals,
+  table subtotal,
     :position => :right,
     :border_width => 0,
     :vertical_padding   => 2,
@@ -23,7 +23,7 @@ bounding_box [bounds.right - 500, bounds.bottom + (subtotal.length * 18)], :widt
 end
 
 bounding_box [bounds.right - 500, bounds.bottom + (shipping.length * 18)], :width => 500 do
-  table totals,
+  table shipping,
     :position => :right,
     :border_width => 0,
     :vertical_padding   => 2,
@@ -35,7 +35,7 @@ bounding_box [bounds.right - 500, bounds.bottom + (shipping.length * 18)], :widt
 end
 
 bounding_box [bounds.right - 500, bounds.bottom + (ordertotals.length * 18)], :width => 500 do
-  table totals,
+  table ordertotals,
     :position => :right,
     :border_width => 0,
     :vertical_padding   => 2,
