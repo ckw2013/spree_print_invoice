@@ -31,9 +31,5 @@ render :partial => "line_items_box"
 
 move_down 8
 
-render :partial => "totals"
-
-move_down 8
-
 # Footer
 # render :partial => "footer"
