@@ -8,7 +8,7 @@ end
 
 totals << [Prawn::Table::Cell.new( :text => Spree.t(:order_total), :font_style => :bold), number_to_currency(@order.total)]
 
-bounding_box, :width => 500 do
+bounding_box [0,cursor], :width => 500 do
   table totals,
     :position => :right,
     :border_width => 0,
