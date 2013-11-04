@@ -1,6 +1,6 @@
 totals = []
 
-totals << [Prawn::Table::Cell.new( :text => Spree.t(:subtotal), :font_style => :bold), number_to_currency(@order.item_total)]
+totals << Prawn::Table::Cell.new( :text => Spree.t(:subtotal), :font_style => :bold), number_to_currency(@order.item_total)
 
 @order.adjustments.each do |charge|
   totals << Prawn::Table::Cell.new( :text => charge.label + ":", :font_style => :bold), number_to_currency(charge.amount)
