@@ -22,9 +22,13 @@ move_down 2
 font "Helvetica", :size => 9
 text "#{I18n.l @order.completed_at.to_date}", :align => :right
 
+move_down 86
+
 render :partial => "custom"
 
 move_down 12
+
+render :partial => "line_items_box"
 
 # Footer
 # render :partial => "footer"
