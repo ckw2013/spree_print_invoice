@@ -24,11 +24,11 @@ text "#{I18n.l @order.completed_at.to_date}", :align => :right
 
 render :partial => "address"
 
-move_down 8
+move_down 12
 
 render :partial => "custom"
 
-move_down 30
+move_down 12
 
 render :partial => "line_items_box"
 
