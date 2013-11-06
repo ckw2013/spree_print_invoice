@@ -6,6 +6,14 @@ else
   @align = { 0 => :left, 1 => :left, 2 => :left, 3 => :right, 4 => :right, 5 => :right}
 end
 
+render :partial => "address"
+
+move_down 12
+
+render :partial => "custom"
+
+move_down 12
+
 # Line Items
 bounding_box [0,cursor], :width => 540, :height => 430 do
   move_down 2
