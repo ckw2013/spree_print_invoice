@@ -24,10 +24,6 @@ text "#{I18n.l @order.completed_at.to_date}", :align => :right
 
 render :partial => "line_items_box"
 
-render :partial => "address"
-
-render :partial => "custom"
-
 move_down 8
 
 # Footer
