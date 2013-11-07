@@ -10,7 +10,7 @@ totals << [Prawn::Table::Cell.new( :text => Spree.t(:order_total), :font_style =
 
 table totals,
     :position => :right,
-    :border_width => 1,
+    :border_width => 0,
     :vertical_padding => 2,
     :horizontal_padding => 6,
     :font_size => 9,
