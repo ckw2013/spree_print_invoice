@@ -15,6 +15,6 @@ table totals,
     :horizontal_padding => 6,
     :font_size => 9,
     :column_widths => { 0 => 465, 1 => 75 } ,
-    :align => { 0 => :right, 1 => :right },
+    :align => { 0 => :right, 1 => :right }
 
 
