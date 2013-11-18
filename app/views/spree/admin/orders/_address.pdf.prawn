@@ -45,7 +45,8 @@ bounding_box [0,600], :width => 540 do
       :vertical_padding   => 0,
       :horizontal_padding => 6,
       :font_size => 9,
-      :column_widths => { 0 => 270, 1 => 270 }
+      :column_widths => { 0 => 270, 1 => 270 },
+      :align => :left
   end
 
   move_down 2
