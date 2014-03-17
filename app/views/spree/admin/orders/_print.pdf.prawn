@@ -3,7 +3,7 @@ require 'prawn/layout'
 font "Helvetica"
 im = "#{Rails.root.to_s}/public/logo.png"
 
-image im , :at => [0,720], :fit => [300, 120]
+image im , :at => [0,720], :fit => [300,120]
 
 fill_color "E99323"
 if @hide_prices
